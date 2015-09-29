@@ -1,110 +1,107 @@
 * {
     box-sizing: border-box;
-    font-family: "Helvetica-neue-Light", "Helveticaneue-light","Helvetica Neue Light", "Helvetica Neue", sans-serif;
-
+    font-family: "Helvetica-neue-Light", "Helveticaneue-light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
 }
-    header > img {
-        background-color: black;
-        width: 100%;
-        height: auto;
-    }
+
+header > img {
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
 
 
 /* Portrait */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
 
+@media only screen and (max-device-width: 480px) {
     img {
         width: 100%;
         height: auto;
     }
     header img {
-      background-color: black;
+        background-color: black;
         width: 100%;
         height: auto;
         position: absolute;
         top: 0px;
         left: 0px;
         padding: 2em;
-
     }
     header > h1 {
         font-size: 1.6em;
         position: static;
     }
-    header > nav, header > form {
+    header > nav,
+    header > form {
         background-color: #ffce00;
         height: auto;
         margin-left: -0.34em;
         padding-right: 4.6em;
-
-       }
-  header > nav ul li {
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      height: auto;
-      margin: auto;
-      color: black;
-      margin: 0.2em;
-}
-
-
-   header li {
-          border: 0.09em;
-          width: 100%;
-          height: auto;
-          border-style: solid;
-          border-color: rgba(0, 0, 0, 0.009);
-          border-radius: 0.1em;
-          list-style: none;
-          background-color: rgba(255, 157, 0, 0.6);
-          font-weight: 300;
-          padding-left: 0.45em;
-      }
-    header > form {
-       position: absolute;
-       top: 380px;
-       width: 100%;
-       height: auto;
-       padding-left: 3em;
-       background-color: #ffce00;
-       padding-bottom: 0.5em;
-}
- header input[type=search] {
-      border: 3px solid rgba(255, 157, 0, 1);
-      border-radius: 0.4em;
-      height: 40px;
-      width: 300px;
-      -webkit-appearance: none;
-     margin-left: -2em;
-  }
-      header button {
-        border: 3px solid rgba(255, 157, 0, 1);
-        border-radius: 0.4em;
-        background-color: #ffce00;
-        width: 80%
-
-      }
-
-      header > nav {
+    }
+    header > nav ul li {
+        flex-direction: column;
+        text-align: center;
         width: 100%;
         height: auto;
-          top: 168px;
-          position: absolute;
-      }
+        margin: auto;
+        color: black;
+        margin: 0.2em;
+    }
+    header li {
+        border: 0.09em;
+        width: 100%;
+        height: auto;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.009);
+        border-radius: 0.1em;
+        list-style: none;
+        background-color: rgba(255, 157, 0, 0.6);
+        font-weight: 300;
+        font-size-adjust: auto;
+    }
+    header > form {
+        position: absolute;
+        top: 380px;
+        width: 100%;
+        height: auto;
+        padding-left: 3em;
+        background-color: #ffce00;
+        padding-bottom: 0.5em;
+    }
+    header input[type=search] {
+        border: 3px solid rgba(255, 157, 0, 1);
+        border-radius: 0.4em;
+        height: 40px;
+        width: 300px;
+        -webkit-appearance: none;
+        margin-left: -2em;
+    }
+    header button {
+        border: 3px solid white;
+        border-radius: 0.4em;
+        background-color: #FFFfff;
+        font-weight: 400;
+        width: 100%
+    }
+    header > nav {
+        width: 100%;
+        height: auto;
+        top: 168px;
+        position: absolute;
+    }
     body {
         font-size: 1.4em;
         padding-top: 460px;
     }
-header li a {
-    color: white;
-    display:block;
-    text-align:center;
-    text-decoration:none;
+    header li a {
+        color: white;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+    footer {
+        top: 9997px;
+        position: absolute;
+        background-color: black;
+        color: white;
+    }
 }
-
-  }
