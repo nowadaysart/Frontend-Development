@@ -1,16 +1,173 @@
-fieldset {
-border: 0;
-border-radius: 10px;
-box-shadow: 0 0 1em black;
-padding: 1em;}
-fieldset + fieldset{ margin: 2em 0 0;}
-legend { padding: 0; position: absolute; font-size: 1.2em; padding-bottom: 2em; }
-legend + ol {
-    padding: 2em 0 0;
-    list-style: none;
+header {
+    max-width: 100%;
 }
-ol > li {
-    background: rgba(0,0,0,.1);
-    padding: .5em;
-    margin: 0;
+
+fieldset {
+    border: 2px solid #e8bc01;
+    border-radius: 1em;
+    box-shadow: 0 0 .4em black;
+    padding: 2em;
+    margin: .1em;
+
+
+}
+
+fieldset + fieldset {
+    margin: 2em 0 0;
+
+}
+
+legend {
+    background-color: #ffce00;
+    padding: .1em;
+    text-align: center;
+
+}
+
+Span {
+    display: block;
+}
+
+input[type="radio"] {
+
+}
+
+.hide {
+    display: none;
+}
+
+.Aanmelden {
+    margin: 2em;
+    padding: 2em 4em;
+    background:#ffce00;
+    border:1 none;
+    border-radius: 5px;
+}
+
+fieldset:nth-child(2) span{
+    display: inherit;
+
+}
+input[type="text"] {
+    width: 80%;
+    height: 1.5em;;
+
+}
+textarea{
+    width: 80%;
+    height: auto;
+}
+
+form em {
+    margin-bottom: 1em;
+}
+
+input {
+    font-size: 16px;
+}
+.related {
+        margin: auto;
+        max-width: 90%;
+}
+.related > article {
+        float: left;
+        max-width: 90%;
+}
+article ul {
+    list-style-type: none;
+    font-size: .8em;
+    max-width: 100%;
+
+}
+aside {
+        margin: auto;
+        max-width: 100%;
+    }
+footer {
+        margin: auto;
+        max-width: 100%;
+}
+#sitemap {
+        max-width: 100%;
+        margin: auto;
+}
+
+
+
+
+@media (min-width: 46em) {
+    fieldset {
+        text-align: justify;
+    }
+    span {
+        display: inline-block;
+    }
+    main input {
+        display: block;
+    }
+    form em {
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    main {
+        display: inline-block;
+
+    }
+    .related {
+        order: 2;
+        flex-direction: row;
+        margin: auto;
+        max-width: 50%;
+        height: auto;
+        border-radius: 1em 1em;
+
+    }
+    .related > h2 {
+        width: 20em;
+        height: 2em;
+        margin: auto;
+
+    }
+    .related > article {
+        padding: 1em;
+        margin: 1em;
+        border-radius: 1em 1em;
+        background-color: #ffffff;
+        box-shadow: 0 .1em .3em black;
+    }
+    article > section {
+        background-color: transparent;
+    }
+
+    aside {
+        flex-direction: column;
+        order: 2;
+        float: right;
+        max-width: 50%;
+        border-radius: 1em 1em;
+    }
+
+    aside article {
+        padding: 1em;
+        margin: 1em;
+        border-radius: 1em 1em;
+        background-color: #ffffff;
+        box-shadow: 0 .1em .3em black;
+
+    }
+    input[type="radio"], input[type="checkbox"] {
+        max-width: 5%;
+        display: inline;
+        margin: auto;
+    }
+    textarea {
+        display: block;
+        max-width: 100%;
+    }
+    span {
+        text-align: center;
+    }
+
+
 }
